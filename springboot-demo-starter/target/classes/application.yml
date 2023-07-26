@@ -26,7 +26,7 @@ properties:
   list: # 注入 List 集合
     - one
     - two
-  array-separated: one, two  # 逗号分隔的数组
+  array_separated: one, two  # 逗号分隔的数组
   extendsProperties: is extends properties # 通过继承配置类注入属性
   hierarchical: # @ConfigurationProperties 注入深层嵌套的对象
     name: hierarchical object

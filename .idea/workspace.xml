@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f631ff3a-6223-439c-9ac8-65cebc75f462" name="变更" comment="" />
+    <list default="true" id="f631ff3a-6223-439c-9ac8-65cebc75f462" name="变更" comment="初始化">
+      <change afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/springboot-demo-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/springboot-demo-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/SpringbootDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/SpringbootDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/inject_yml_properties/InjectProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/inject_yml_properties/InjectProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/inject_yml_properties/InjectPropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/inject_yml_properties/InjectPropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/domain/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/domain/IUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/domain/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/domain/SpecialGetSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/domain/SpecialGetSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/springboot_primary/ServTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/server_basic_structure/ServTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/springboot_primary/SpringbootDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/server_basic_structure/SpringbootDemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/test/ServTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/test/ServTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-temp-demo/springboot-temp-demo.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +39,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -32,6 +60,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2KYK0MayKS50sMLuyIsAWfnLwzl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,6 +73,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
     &quot;last_opened_file_path&quot;: &quot;F:/my_workspace/springboot-demo/springboot-temp-demo/lib/conflict-bean-resolve-1.0.0.jar&quot;,
@@ -79,7 +109,55 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SpringbootDemoApplicationTests.testSet">
+    <configuration name="ServTest.testShow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-demo-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springboot.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springboot.test" />
+      <option name="MAIN_CLASS_NAME" value="com.springboot.test.ServTest" />
+      <option name="METHOD_NAME" value="testShow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDemoApplicationTests.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-demo-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springboot.server_basic_structure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springboot.server_basic_structure" />
+      <option name="MAIN_CLASS_NAME" value="com.springboot.server_basic_structure.SpringbootDemoApplicationTests" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootDemoApplicationTests.testSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-demo-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.springboot.server_basic_structure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.springboot.server_basic_structure" />
+      <option name="MAIN_CLASS_NAME" value="com.springboot.server_basic_structure.SpringbootDemoApplicationTests" />
+      <option name="METHOD_NAME" value="testSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringbootDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot-demo-starter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.springboot.SpringbootDemoApplication" />
@@ -87,6 +165,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringbootDemoApplicationTests.testSet" />
+        <item itemvalue="JUnit.SpringbootDemoApplicationTests.testFindAll" />
+        <item itemvalue="JUnit.ServTest.testShow" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -134,11 +219,36 @@
       <workItem from="1682220020018" duration="8729000" />
       <workItem from="1682428253061" duration="58000" />
       <workItem from="1683509901853" duration="40000" />
+      <workItem from="1683532509594" duration="329000" />
+      <workItem from="1683542418427" duration="1907000" />
+      <workItem from="1683971355232" duration="159000" />
+      <workItem from="1683972500410" duration="2328000" />
+      <workItem from="1684084897296" duration="1267000" />
+      <workItem from="1684143597699" duration="683000" />
+      <workItem from="1684285655941" duration="139000" />
+      <workItem from="1685699439270" duration="48000" />
+      <workItem from="1686108278929" duration="25000" />
+      <workItem from="1688120793522" duration="77000" />
+      <workItem from="1690163365020" duration="6279000" />
+      <workItem from="1690251754813" duration="1972000" />
+      <workItem from="1690334539551" duration="10465000" />
     </task>
+    <task id="LOCAL-00001" summary="初始化">
+      <created>1683532782534</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683532782534</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -150,8 +260,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/inject_yml_properties/InjectPropertiesTest.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="29" />
+          <line>26</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

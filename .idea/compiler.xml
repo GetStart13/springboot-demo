@@ -10,10 +10,5 @@
         <module name="springboot-temp-demo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="springboot-demo" target="17" />
-      <module name="springboot-demo-starter" target="17" />
-      <module name="springboot-temp-demo" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

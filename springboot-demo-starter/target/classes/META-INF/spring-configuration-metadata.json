@@ -1,0 +1,79 @@
+{
+  "groups": [
+    {
+      "name": "person2",
+      "type": "com.springboot.server_basic_structure.domain.Person",
+      "sourceType": "com.springboot.server_basic_structure.domain.Person"
+    },
+    {
+      "name": "properties",
+      "type": "com.springboot.inject_yml_properties.InjectProperties",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties"
+    },
+    {
+      "name": "properties.hierarchical",
+      "type": "com.springboot.inject_yml_properties.InjectProperties$HierarchicalProperties",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties",
+      "sourceMethod": "getHierarchical()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person2.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.springboot.server_basic_structure.domain.Person"
+    },
+    {
+      "name": "person2.name",
+      "type": "java.lang.String",
+      "sourceType": "com.springboot.server_basic_structure.domain.Person"
+    },
+    {
+      "name": "properties.array",
+      "type": "java.lang.String[]",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties"
+    },
+    {
+      "name": "properties.array-inline",
+      "type": "java.lang.String[]",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties"
+    },
+    {
+      "name": "properties.hierarchical.map",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties$HierarchicalProperties"
+    },
+    {
+      "name": "properties.hierarchical.name",
+      "type": "java.lang.String",
+      "description": "默认值",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties$HierarchicalProperties"
+    },
+    {
+      "name": "properties.hierarchical.value",
+      "type": "java.lang.String",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties$HierarchicalProperties"
+    },
+    {
+      "name": "properties.list",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties"
+    },
+    {
+      "name": "properties.name",
+      "type": "java.lang.String",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties"
+    },
+    {
+      "name": "properties.user",
+      "type": "com.springboot.inject_yml_properties.User",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties"
+    },
+    {
+      "name": "properties.user-inline",
+      "type": "com.springboot.inject_yml_properties.User",
+      "sourceType": "com.springboot.inject_yml_properties.InjectProperties"
+    }
+  ],
+  "hints": []
+}

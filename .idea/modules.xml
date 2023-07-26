@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springboot-demo.iml" filepath="$PROJECT_DIR$/springboot-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-demo-starter/springboot-demo-starter.iml" filepath="$PROJECT_DIR$/springboot-demo-starter/springboot-demo-starter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot-temp-demo/springboot-temp-demo.iml" filepath="$PROJECT_DIR$/springboot-temp-demo/springboot-temp-demo.iml" />
     </modules>
   </component>
 </project>

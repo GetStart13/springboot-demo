@@ -12,7 +12,7 @@ import java.util.Map;
 
 /**
  * <p> 2023/4/10 </p>
- * 通过 @ConfigurationProperties 要求必须有 setter 方法，子类可以继承该类获取注入属性
+ * 通过 @ConfigurationProperties 注入，要求必须有 setter 方法，子类可以继承该类获取注入属性
  *
  * @author Fqq
  */
@@ -21,14 +21,18 @@ import java.util.Map;
 public class InjectProperties {
     private String name;
 
-    // 默认值 defaultName
-    @Value("${name:defaultName}")
+    /**
+     * 通过 @Value 注入值，并设置默认值: defaultName
+     */
+    @Value("${properties.nameInner:defaultName}")
     public void setName(String name) {
         this.name = name;
     }
 
     private String[] array;
+    private String[] arrayInline;
     private User user;
+    private User userInline;
     private List<String> list;
     private HierarchicalProperties hierarchical = new HierarchicalProperties();
 
@@ -45,12 +49,28 @@ public class InjectProperties {
         this.array = array;
     }
 
+    public String[] getArrayInline() {
+        return arrayInline;
+    }
+
+    public void setArrayInline(String[] arrayInline) {
+        this.arrayInline = arrayInline;
+    }
+
     public User getUser() {
         return user;
     }
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public User getUserInline() {
+        return userInline;
+    }
+
+    public void setUserInline(User userInline) {
+        this.userInline = userInline;
     }
 
     public List<String> getList() {
@@ -76,12 +96,17 @@ public class InjectProperties {
     public InjectProperties() {
     }
 
-    @Autowired // 通过构造方法注入 bean
+    /**
+     * 通过构造方法注入 bean
+     *
+     * @param environment spring 环境
+     */
+    @Autowired
     public InjectProperties(Environment environment) {
         String nameProperty = environment.getProperty("properties.nameInner", String.class);
         System.out.println("通过 Environment 注入属性: " + nameProperty);
         // Environment 不支持注入 List 集合，但支持逗号分隔的数组
-        String[] strings = environment.getProperty("properties.array_separated", String[].class);
+        String[] strings = environment.getProperty("properties.array-separated", String[].class);
         System.out.println("通过 Environment 注入数组: " + Arrays.toString(strings));
     }
 

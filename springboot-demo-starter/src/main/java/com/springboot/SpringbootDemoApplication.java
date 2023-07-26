@@ -3,21 +3,17 @@ package com.springboot;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 
-@SpringBootApplication//(scanBasePackages = "com.mywork")// 如果与启动类不同包，要扫描注解就要配置主包
-@MapperScan("com.springboot.springboot_primary.mapper")
+/**
+ * <p> 2023/7/26 </p>
+ * springboot 启动类
+ *
+ * @author Fqq
+ */
+@SpringBootApplication//(scanBasePackages = "com.mywork")// 配置 springboot 包扫描，默认扫描启动类所在的包及其子包
+@MapperScan("com.springboot.server_basic_structure.mapper")
 public class SpringbootDemoApplication {
-
     public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(SpringbootDemoApplication.class, args);
-        for (String beanDefinitionName : context.getBeanDefinitionNames()) {
-            if (beanDefinitionName.endsWith("Controller")) {
-                System.out.println("------------ controller ---------------  " + beanDefinitionName);
-            } else if (beanDefinitionName.endsWith("ConflictOne")) {
-                System.out.println("------------ conflict bean ---------------  " + beanDefinitionName);
-            }
-        }
+        SpringApplication.run(SpringbootDemoApplication.class, args);
     }
-
 }

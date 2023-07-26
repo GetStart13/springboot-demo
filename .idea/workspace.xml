@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f631ff3a-6223-439c-9ac8-65cebc75f462" name="变更" comment="初始化">
-      <change afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/springboot-demo-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/springboot-demo-starter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/SpringbootDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/SpringbootDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/inject_yml_properties/InjectProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/inject_yml_properties/InjectProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/inject_yml_properties/InjectPropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/inject_yml_properties/InjectPropertiesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/controller/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/domain/IUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/domain/IUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/domain/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/domain/SpecialGetSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/domain/SpecialGetSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/springboot_primary/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/java/com/springboot/server_basic_structure/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/springboot_primary/ServTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/server_basic_structure/ServTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/springboot_primary/SpringbootDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/server_basic_structure/SpringbootDemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/test/ServTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-demo-starter/src/test/java/com/springboot/test/ServTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-temp-demo/springboot-temp-demo.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="f631ff3a-6223-439c-9ac8-65cebc75f462" name="变更" comment="初始化" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +84,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringbootDemoApplicationTests.testSet">
+  <component name="RunManager" selected="Spring Boot.SpringbootDemoApplication">
     <configuration name="ServTest.testShow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-demo-starter" />
       <extension name="coverage">
@@ -231,7 +206,7 @@
       <workItem from="1688120793522" duration="77000" />
       <workItem from="1690163365020" duration="6279000" />
       <workItem from="1690251754813" duration="1972000" />
-      <workItem from="1690334539551" duration="10465000" />
+      <workItem from="1690334539551" duration="15610000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1683532782534</created>

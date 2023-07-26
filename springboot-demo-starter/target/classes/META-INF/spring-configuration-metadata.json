@@ -1,11 +1,6 @@
 {
   "groups": [
     {
-      "name": "person2",
-      "type": "com.springboot.server_basic_structure.domain.Person",
-      "sourceType": "com.springboot.server_basic_structure.domain.Person"
-    },
-    {
       "name": "properties",
       "type": "com.springboot.inject_yml_properties.InjectProperties",
       "sourceType": "com.springboot.inject_yml_properties.InjectProperties"
@@ -18,16 +13,6 @@
     }
   ],
   "properties": [
-    {
-      "name": "person2.age",
-      "type": "java.lang.Integer",
-      "sourceType": "com.springboot.server_basic_structure.domain.Person"
-    },
-    {
-      "name": "person2.name",
-      "type": "java.lang.String",
-      "sourceType": "com.springboot.server_basic_structure.domain.Person"
-    },
     {
       "name": "properties.array",
       "type": "java.lang.String[]",

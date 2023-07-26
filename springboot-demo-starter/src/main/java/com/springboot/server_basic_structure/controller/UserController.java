@@ -97,7 +97,7 @@ public class UserController {
      * @param id 根据 id 删除
      * @return 删除结果
      */
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/remove/{id}")
     public ResponseEntity<String> remove(@PathVariable("id") String id) {
         System.out.println("id: " + id);
         return ResponseEntity.ok("Delete [" + id + "] success");

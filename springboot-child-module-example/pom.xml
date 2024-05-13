@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-boot-demo</artifactId>
+        <groupId>org.springboot.example</groupId>
+        <!-- 从相对路径中查找父级，默认在上一级目录中查找 -->
+        <!--<relativePath>../pom.xml</relativePath>-->
+        <!-- 相对路径为空，此时将在 maven 仓库中查找父级 pom  -->
+        <!--<relativePath/>-->
+        <!-- 指定父模块版本 -->
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 模块工件名 -->
+    <artifactId>springboot-child-module-example</artifactId>
+
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+    <!-- 子模块显式定义版本号，与父模块分离，但一般不这么做 -->
+    <!--<version>1.0.0</version>-->
+    <description>Maven 多模块项目样例：子模块</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.springboot</groupId>
+            <artifactId>conflict-bean-resolve</artifactId>
+            <version>1.0.0</version>
+            <!-- 不建议使用此方法引入 jar 包，这里单纯为了测试 maven 引入 jar 与 idea 直接引入的区别 -->
+            <scope>system</scope>
+            <systemPath>${pom.basedir}/lib/conflict-bean-resolve-1.0.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <!-- 不写版本号，表示从 dependencyManagement 或父级 pom 继承依赖（如果有此依赖且此依赖具有传递性） -->
+            <!--<version>2.6.3</version>-->
+        </dependency>
+    </dependencies>
+
+</project>

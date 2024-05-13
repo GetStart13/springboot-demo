@@ -2,24 +2,44 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.springboot</groupId>
-    <artifactId>springboot-demo</artifactId>
+    <!-- 模块组名 -->
+    <groupId>org.springboot.example</groupId>
+    <!-- 工件名（项目名） -->
+    <artifactId>spring-boot-demo</artifactId>
+    <!-- 打包方式。默认为 jar。多模块时父级模块需要指定为 pom，在安装或部署项目时不生成任何主代码包。 -->
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <!--
+    自 Maven 3.5.0 起，引入了 `${revision}`、`${sha1}` 和 `${changelist}` 占位符，以支持称为 "CI 友好版本" 的功能。
+    可以使用这些特定的属性来动态修改项目的版本号，而无需修改 pom.xml 文件。
+    如果使用了这些占位符，子模块也应该沿用以保持一致，否则无法通过扫描检查。
+    命令行动态指定版本号，使用 `-D` 参数，例：`mvn clean package -Drevision=2.0.0`
+    -->
+    <version>${revision}</version>
+    <!-- 子模块 -->
     <modules>
-        <module>springboot-temp-demo</module>
+        <module>springboot-child-module-example</module>
         <module>springboot-demo-starter</module>
     </modules>
-    <name>springboot-demo</name>
+    <!-- 模块名 -->
+    <name>spring-boot-demo</name>
     <description>Demo project for Spring Boot</description>
 
+    <!-- 属性参数，在其它地方可使用引用符 `${}` 引用到属性值 -->
     <properties>
+        <revision>1.0.0</revision>
         <java.version>17</java.version>
         <!-- 指定 java 版本和编译版本 -->
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.source>17</maven.compiler.source>
     </properties>
 
+    <!--
+    依赖管理部分 <dependencyManagement> 是一种用于集中依赖信息的机制。当您有一组公共依赖的项目时，可以将有关依赖项的
+    所有信息放在公共 POM 中，只需在子 POM 中的工件中进行更简单的引用（只指定 <groupId> 和 <artifactId> 才会从父 pom 中查找，
+    如果指定了版本号 <version> 会查找所指定的版本）。
+    <dependencyManagement> 只是用于父工程管理依赖，用于统一管理 jar 的版本。当子工程需要使用相应的 jar 时，才会去下载相关依赖。
+    如果 dependencyManagement 的依赖一直下载失败，可以提取到 dependencies 下，下载完再放回 dependencyManagement
+    -->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -27,9 +47,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>2.7.5</version>
-                <!--  依赖作为 pom 文件导入 -->
-                <scope>import</scope>
+                <!-- import 范围只在 <dependencyManagement> 中且 type 为 pom 类型的依赖项上受支持 -->
                 <type>pom</type>
+                <!--
+                import 指从其他 pom 中的 <dependencyManagement> 导入依赖，
+                如果导入了多个 pom ，它们有相同的（<groupId>和<artifactId>都相同）依赖，则先导入的依赖起作用（即：按顺序导入），
+                如果在后面重新声明该依赖的版本号，则后声明的版本号起作用，import 起到连通作用。
+                -->
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
